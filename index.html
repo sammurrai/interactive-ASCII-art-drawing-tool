@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Drawing Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ASCII Art Drawing Tool</h1>
+            <p>Draw with your mouse or finger to create ASCII art with musical notes!</p>
+        </header>
+        
+        <div class="controls">
+            <button id="patternBtn" class="btn">Pattern: Stars</button>
+            <button id="clearBtn" class="btn">Clear Canvas</button>
+            <div class="pattern-info">
+                <span id="patternInfo">★ ✦ ✧ ✩ ✪</span>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="drawingCanvas" width="800" height="600"></canvas>
+            <div id="asciiOverlay"></div>
+        </div>
+        
+        <div class="instructions">
+            <p>Click and drag to draw • Each symbol creates a unique musical note • Switch patterns for different themes</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
