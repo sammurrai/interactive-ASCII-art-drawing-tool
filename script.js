@@ -117,12 +117,11 @@ class ASCIIArtTool {
     
     getMousePos(e) {
         const rect = this.canvas.getBoundingClientRect();
-        const scaleX = this.canvas.width / rect.width;
-        const scaleY = this.canvas.height / rect.height;
+        const overlayRect = this.asciiOverlay.getBoundingClientRect();
         
         return {
-            x: (e.clientX - rect.left) * scaleX,
-            y: (e.clientY - rect.top) * scaleY
+            x: e.clientX - overlayRect.left,
+            y: e.clientY - overlayRect.top
         };
     }
     
